@@ -4,9 +4,9 @@
   "license": "",
   "id": "com.sap.sac.sample.echarts.nested_chart",
   "version": "2.0.0",
-  "name": "ECharts Nested Pie Chart Hosted SAP BTP",
+  "name": "ECharts Nested Pie Chart Hosted SAP Github",
   "newInstancePrefix": "EChartNestedPieChart",
-  "description": "A sample custom widget wrapped EChart Nested Pie Chart Hosted in SAP BTP",
+  "description": "A sample custom widget wrapped EChart Nested Pie Chart Hosted in SAP Github",
   "webcomponents": [
     {
       "kind": "main",
