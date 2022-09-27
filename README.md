@@ -21,9 +21,10 @@ Please edit this file as it is the primary description file for your project. Yo
 -->
 
 ## Description
-<!-- Please include SEO-friendly description -->
+This repository is created to host Custom Widget Samples, ready to use within your Analytical Application or also with the new unified Story known as Story 2.0. we offer this GitHub repository to Customers and Partners to share their content by uploading and downloading Custom widget samples.
 
 ## Requirements
+All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimised view mode (OVM) is enabled in order to run the Samples. 
 
 ## Download and Installation
 
