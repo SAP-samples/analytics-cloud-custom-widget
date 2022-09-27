@@ -24,9 +24,10 @@ Please edit this file as it is the primary description file for your project. Yo
 This repository is created to host Custom Widget Samples, ready to use within your Analytical Application or also with the new unified Story known as Story 2.0. we offer this GitHub repository to Customers and Partners to share their content by uploading and downloading Custom widget samples.
 
 ## Requirements
-All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimised view mode (OVM) is enabled in order to run the Samples. 
+All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimised view mode (OVM) is enabled within Analytics Designer or with the new unified Story. 
 
 ## Download and Installation
+Developers/Users can download the Custom Widgets files (JSON/JavaScript) and hosted into their favorite cloud hosting service. The Widget developer needs to install the metadata file to enable the widget own web service by uploading it into the Sap Analytics Cloud.
 
 ## Known Issues
 <!-- You may simply state "No known issues. -->
