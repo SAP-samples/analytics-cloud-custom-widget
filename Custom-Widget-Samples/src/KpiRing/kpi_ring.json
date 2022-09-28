@@ -1,0 +1,47 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.ring_kpi",
+  "version": "1.0.0",
+  "name": "ECharts Kpi Ring Prepared",
+  "newInstancePrefix": "EChartPrepared",
+  "description": "A sample custom widget wrapped EChart gauge ring Prepared",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-ring_kpi",
+      "url": "http://localhost:9000/main.bundle.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 420
+    }
+  },
+  "dataBindings": {
+    "myDataSource": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  },
+  "methods": {},
+  "events": {}
+}

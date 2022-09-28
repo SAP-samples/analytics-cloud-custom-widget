@@ -1,0 +1,47 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "Apache Echart",
+  "id": "com.sap.sac.sample.echarts.grogress_gauge",
+  "version": "1.0.0",
+  "name": "ECharts Grogress Gauge",
+  "newInstancePrefix": "EChartGrogressGauge",
+  "description": "A Sample Custom Widget EChart Grogress Gauge Chart",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-grogress_gauge",
+      "url": "http://localhost:9000/main.bundle.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 420
+    }
+  },
+  "dataBindings": {
+    "myDataSource": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  },
+  "methods": {},
+  "events": {}
+}
