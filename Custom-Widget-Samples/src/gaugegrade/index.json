@@ -12,14 +12,14 @@
     {
       "kind": "main",
       "tag": "com-sap-sac-sample-echarts-gaugegrade",
-      "url": "http://localhost:9000/main.bundle.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/dist/main.bundle.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-sap-sac-sample-echarts-gaugegrade-styling",
-      "url": "http://localhost:9000/main.bundle.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/dist/main.bundle.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
