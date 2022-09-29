@@ -11,7 +11,7 @@
         {
             "kind": "main",
             "tag": "github-sap-funnel-chart",
-            "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/Nested-Pie-Chart/funnelchart.js",
+            "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/Funnel Chart/funnelchart.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
