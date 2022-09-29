@@ -1,0 +1,49 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.sankey",
+  "version": "1.0.0",
+  "supportsMobile": true,
+  "name": "EChartsSankey",
+  "newInstancePrefix": "EChartsSankey",
+  "description": "A sample custom widget project",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sac-sample-echarts-sankey",
+      "url": "http://localhost:9000/main.bundle.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 320
+    }
+  },
+  "events": {},
+  "methods": {},
+  "types": {},
+  "dataBindings": {
+    "dataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  }
+}

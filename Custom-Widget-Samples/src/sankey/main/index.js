@@ -11,7 +11,6 @@ class Main extends HTMLElement {
     this._shadowRoot = this.attachShadow({ mode: 'open' })
     this._shadowRoot.appendChild(template.content.cloneNode(true))
     this._root = this._shadowRoot.getElementById('root')
-
     this._renderer = new Renderer(this._root)
   }
 
@@ -22,9 +21,7 @@ class Main extends HTMLElement {
   }
 
   async onCustomWidgetAfterUpdate (changedProps) {
-    if (changedProps.text) {
-      this.render()
-    }
+    this.render()
   }
 
   async onCustomWidgetResize (width, height) {
@@ -38,46 +35,19 @@ class Main extends HTMLElement {
   // ------------------
   //
   // ------------------
-  // setText (text) {
-  //   debugger
-  //   // this._text = text
-  //   this.dispatchEvent(new CustomEvent('propertiesChanged', { detail: { properties: { text } } }))
-  //   // this.render()
-  //   // this._text = '' // TODO
-  //
-  //   // this.text = text
-  // }
-
-  dispose () {
-    this._renderer.dispose()
-  }
-
-  async render () {
+  render () {
     if (!document.contains(this)) {
       // Delay the render to assure the custom widget is appended on dom
       setTimeout(this.render.bind(this), 0)
       return
     }
+
+    this._renderer.render(this.dataBinding)
+  }
+
+  dispose () {
     this._renderer.dispose()
-
-    const text = this._text || this.text
-
-    const byPhrase = {}
-    text.toLowerCase().split(' ').map(word => {
-      byPhrase[word] = byPhrase[word] || {
-        phrase: word,
-        count: 0
-      }
-      byPhrase[word].count++
-    })
-
-    const phrase = []
-    for (const word in byPhrase) {
-      phrase.push(byPhrase[word])
-    }
-
-    this._renderer.render(phrase)
   }
 }
 
-customElements.define('com-sap-sac-sample-echarts-wordcloudbyinput', Main)
+customElements.define('com-sap-sac-sample-echarts-sankey', Main)

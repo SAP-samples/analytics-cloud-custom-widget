@@ -6,6 +6,7 @@ module.exports = {
     './src/gaugegrade/main/index.js',
     './src/gaugegrade/styling/index.js',
     './src/KpiRing/kpi_ring.js',
+    './src/sankey/main/index.js',
     './src/wordcloudbyinput/main/index.js',
     './src/wordcloudbyinput/builder/index.js'
   ],

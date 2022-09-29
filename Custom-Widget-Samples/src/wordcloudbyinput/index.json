@@ -35,9 +35,6 @@
     },
     "text": {
       "type": "string"
-    },
-    "cache": {
-      "type": "any"
     }
   },
   "methods": {
