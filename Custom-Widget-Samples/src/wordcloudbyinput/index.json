@@ -12,14 +12,14 @@
     {
       "kind": "main",
       "tag": "com-sap-sac-sample-echarts-wordcloudbyinput",
-      "url": "http://localhost:9000/main.bundle.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/dist/main.bundle.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "builder",
       "tag": "com-sap-sac-sample-echarts-wordcloudbyinput-builder",
-      "url": "http://localhost:9000/main.bundle.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/dist/main.bundle.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
