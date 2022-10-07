@@ -51,7 +51,7 @@ import { parseMetadata } from '../utils/data-binding/parse'
                 value: data[0][measure.key].raw,
                 name: measure.label,
                 title: {
-                  offsetCenter: ['-0%', `${-30 + i * 30}%`]
+                  offsetCenter: ['-0%', `${-35 + i * 30}%`]
                 },
                 detail: {
                   valueAnimation: true,
