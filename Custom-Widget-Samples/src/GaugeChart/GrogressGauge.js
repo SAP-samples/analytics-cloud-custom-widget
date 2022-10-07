@@ -17,6 +17,7 @@ import { parseMetadata } from '../utils/data-binding/parse'
 
       this._props = {}
 
+      this._echart = undefined
       this.render()
     }
 
@@ -30,6 +31,8 @@ import { parseMetadata } from '../utils/data-binding/parse'
     }
 
     async render () {
+      this.dispose()
+
       if (!this._myDataSource || this._myDataSource.state !== 'success') {
         return
       }
@@ -37,7 +40,7 @@ import { parseMetadata } from '../utils/data-binding/parse'
       const { data, metadata } = this._myDataSource
       const { dimensions, measures } = parseMetadata(metadata)
 
-      const myChart = echarts.init(this._root, 'wight')
+      this._echart = echarts.init(this._root, 'wight')
       const option = {
         series: [
           {
@@ -127,7 +130,13 @@ import { parseMetadata } from '../utils/data-binding/parse'
           }
         ]
       }
-      myChart.setOption(option)
+      this._echart.setOption(option)
+    }
+
+    dispose () {
+      if (this._echart) {
+        echarts.dispose(this._echart)
+      }
     }
   }
 
