@@ -101,7 +101,7 @@ import { parseMetadata } from '../utils/data-binding/parse'
               color: 'auto',
               borderColor: 'auto',
               borderRadius: 20,
-              borderWidth: 1,
+              borderWidth: 0,
               formatter: '{value}%'
             }
           }

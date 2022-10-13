@@ -51,11 +51,11 @@ import { parseMetadata } from '../utils/data-binding/parse'
             max: 240,
             splitNumber: 12,
             itemStyle: {
-              color: '#F0AB00',
-              shadowColor: '',
-              shadowBlur: 8,
-              shadowOffsetX: 2,
-              shadowOffsetY: 2
+              color: '#008FD3',
+              shadowColor: 'rgba(0,0,0,0)',
+              shadowBlur: 0,
+              shadowOffsetX: 0,
+              shadowOffsetY: 0
             },
             progress: {
               show: true,
@@ -82,16 +82,16 @@ import { parseMetadata } from '../utils/data-binding/parse'
               }
             },
             splitLine: {
-              length: 12,
+              length: 6,
               lineStyle: {
-                width: 3,
+                width: 4,
                 color: '#999'
               }
             },
             axisLabel: {
               distance: 30,
               color: '#999',
-              fontSize: 20
+              fontSize: 16
             },
             title: {
               show: false
@@ -99,11 +99,11 @@ import { parseMetadata } from '../utils/data-binding/parse'
             detail: {
               backgroundColor: '#fff',
               borderColor: '#999',
-              borderWidth: 0,
+              borderWidth: 1,
               width: '60%',
               lineHeight: 40,
               height: 40,
-              borderRadius: 8,
+              borderRadius: 4,
               offsetCenter: [0, '35%'],
               valueAnimation: true,
               formatter: function (value) {
@@ -111,7 +111,7 @@ import { parseMetadata } from '../utils/data-binding/parse'
               },
               rich: {
                 value: {
-                  fontSize: 50,
+                  fontSize: 35,
                   fontWeight: 'bolder',
                   color: '#777'
                 },
