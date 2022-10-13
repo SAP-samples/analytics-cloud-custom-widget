@@ -21,11 +21,11 @@ Please edit this file as it is the primary description file for your project. Yo
 -->
 
 ## Description
-This repository is created to host Custom Widget Samples, ready to use within your Analytical Application or also with the new Optimized and Unified Story Experience unified Story known as Story 2.0
+This repository is created to host Custom Widget Samples, ready to use within your Analytical Application or also with the new Optimized and Unified Story Experience known as Story 2.0
 We offer this GitHub repository to Customers and Partners to share their content by uploading and downloading Custom widget samples.
 
 ## Requirements
-All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimized view mode (OVM) is enabled within Analytics Designer or with the Optimized and Unified Story Experience unified Story known as Story 2.0 
+All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimized view mode (OVM) is enabled within Analytics Designer or with the Optimized and Unified Story Experience known as Story 2.0 
 
 ## Download and Installation
 Developers/Users can download the Custom Widgets files (JSON/JavaScript) and hosted into their favorite cloud hosting service. They can use as well this repository as a web server by just downloading the JSON file and hosted into their SAP Analytics Cloud tenant.
