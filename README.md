@@ -1,17 +1,4 @@
-# SAP-samples/analytics-cloud-custom-widget
-
-This default template for SAP Samples repositories includes files for README, LICENSE, and .reuse/dep5. All repositories on github.com/SAP-samples will be created based on this template.
-
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The .reuse/dep5 file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the .reuse/dep5 in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/analytics-cloud-custom-widget)](https://api.reuse.software/info/github.com/SAP-samples/analytics-cloud-custom-widget)
 
 # SAP ANALYTICS CLOUD - CUSTOM WIDGET SAMPLES
 <!-- Please include descriptive title -->
@@ -28,7 +15,7 @@ We offer this GitHub repository to Customers and Partners to share their content
 All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimized view mode (OVM) is enabled within Analytics Designer or with the Optimized and Unified Story Experience known as Story 2.0 
 
 ## Download and Installation
-Developers/Users can download the Custom Widgets files (JSON/JavaScript) and hosted into their favorite cloud hosting service. They can use as well this repository as a web server by just downloading the JSON file and hosted into their SAP Analytics Cloud tenant.
+Developers/Users can download the Custom Widgets files (JSON/JavaScript) and hosted into their favorite cloud hosting service. They can use as well this repository as a web server by just downloading the JSON file and hosted into their SAP Analytics Cloud tenant. 
 
 ## Known Issues
 If you are planning to host the custom widget within different GitHub repository or different web server, don't forget to change the path to the web componenet files in the JSON file. 
