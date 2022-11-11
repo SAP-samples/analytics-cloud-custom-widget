@@ -70,8 +70,9 @@ import { parseMetadata } from '../utils/data-binding/parse'
               roundCap: true,
               clip: false,
               itemStyle: {
-                borderWidth: 1,
-                borderColor: '#464646'
+                borderWidth: 2,
+                borderColor: '#f5f5f5',
+                color: '#354a5f'
               }
             },
             axisLine: {
