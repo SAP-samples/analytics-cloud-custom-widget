@@ -80,7 +80,7 @@ var getScriptPromisify = (src) => {
 			type: 'category',
 			data: dataAxis,
 			axisLabel: {
-				color: 'rgb(166, 168, 171)'
+				color: 'rgb(53, 74, 95)'
 			},
 			axisLine: {
 				lineStyle: {
@@ -112,12 +112,12 @@ var getScriptPromisify = (src) => {
 				label: {
 					show: true,
 					position: 'outside',
-					color: 'rgb(53, 74, 95)',
+					color: 'rgb(88,89,91)',
 					fontSize: 10,
 					formatter: function(params) {return params.value.toLocaleString('en-US')}
 				},
 				itemStyle: {
-					color: 'rgb(53, 74, 95)',
+					color: 'rgb(157, 195, 230)',
 				}
 			}
 		]
