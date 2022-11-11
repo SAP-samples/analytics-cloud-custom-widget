@@ -1,0 +1,132 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.evonik.bar_chart",
+  "version": "1.0.0",
+  "name": "Evonik BarChart",
+  "newInstancePrefix": "EvonikBarChart",
+  "icon": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/EvonikBar/EvonikBar.png",
+  "description": "Evonik-style Bar Chart",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-evonik-bar_chart",
+      "url": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/EvonikBar/EvonikBar_main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 420
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		},
+		"dimensionFeed": {
+			"type": "string[]",
+			"default": []
+		},
+		"measureFeed": {
+			"type": "string[]",
+			"default": []
+		}
+  },
+  "dataBindings": {
+		"myDataBinding": {
+			"feeds": [
+				{
+					"id": "dimensions",
+					"description": "Dimensions",
+					"type": "dimension"
+				},
+				{
+					"id": "measures",
+					"description": "Measures",
+					"type": "mainStructureMember"
+				}
+			]
+		}
+	},
+  "methods": {
+    "openSelectModelDialog": {
+      "parameters": [],
+      "body": "this.dataBindings.getDataBinding('myDataBinding').openSelectModelDialog();"
+    },
+    "getDimensions": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataBinding').getDataSource().getDimensions();",
+      "returnType": "DimensionInfo[]"
+    },
+    "getMeasures": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataBinding').getDataSource().getMeasures();",
+      "returnType": "MeasureInfo[]"
+    },
+    "addDimension": {
+      "parameters": [
+        {
+          "name": "dimensionId",
+          "type": "string"
+        }
+      ]
+    },
+    "addMeasure": {
+      "parameters": [
+        {
+          "name": "measureId",
+          "type": "string"
+        }
+      ]
+    },
+    "removeDimension": {
+      "parameters": [
+        {
+          "name": "dimensionId",
+          "type": "string"
+        }
+      ]
+    },
+    "removeMeasure": {
+      "parameters": [
+        {
+          "name": "measureId",
+          "type": "string"
+        }
+      ]
+    },
+    "getDimensionsOnFeed": {
+      "parameters": [],
+      "returnType": "string[]"
+    },
+    "getMeasuresOnFeed": {
+      "parameters": [],
+      "returnType": "string[]"
+    },
+    "getDataSource": {
+      "parameters": [],
+      "body": "return this.dataBindings.getDataBinding('myDataBinding').getDataSource();",
+      "returnType": "DataSource"
+    },
+    "setModel": {
+      "parameters": [
+        {
+          "name": "modelId",
+          "type": "string"
+        }
+      ],
+      "body": "this.dataBindings.getDataBinding('myDataBinding').setModel(modelId);"
+    }
+
+  },
+  "events": {
+    "onResultChanged": {
+      "description": "called when the result set of the widget changes"
+    },
+    "onClick": {
+      "description": "called when the widget is clicked"
+    }
+}}

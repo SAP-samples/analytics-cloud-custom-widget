@@ -1,0 +1,49 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.bargradientbinding",
+  "version": "1.0.0",
+  "supportsMobile": true,
+  "name": "ECharts BarGradientBinding",
+  "newInstancePrefix": "EChartBarGradientBinding",
+  "description": "A sample custom widget wrapped EChart BarGradientBinding",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-bar-gradient-binding",
+      "url": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/bar-gradient-binding/main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "width": {
+      "type": "integer",
+      "default": 600
+    },
+    "height": {
+      "type": "integer",
+      "default": 420
+    }
+  },
+  "methods": {},
+  "events": {},
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
+        }
+      ]
+    }
+  }
+}
+

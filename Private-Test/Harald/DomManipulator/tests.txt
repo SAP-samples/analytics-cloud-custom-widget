@@ -1,0 +1,24 @@
+$("text.contextmenu-supported > tspan").text($("tspan").text().replace("#", "Others"));
+
+$("text.contextmenu-supported > tspan").text().replace("#", "Others"));
+
+$("text.contextmenu-supported > tspan")[7].innerHTML
+
+$("text.contextmenu-supported > tspan")[7].textContent
+
+$("text.contextmenu-supported > tspan").text($("text.contextmenu-supported > tspan").text().replace("#", "Others"));
+
+
+
+let link2 = $("text.contextmenu-supported > tspan")[7];
+
+link2.onclick = function (evt) {
+   evt.stopPropagation();
+   console.log('Ich mach trotzdem den Abflug!');
+}
+
+
+link2.onmouseenter = function (evt) {
+   evt.preventDefault();
+   console.log('Ich mach trotzdem den Abflug!');
+}

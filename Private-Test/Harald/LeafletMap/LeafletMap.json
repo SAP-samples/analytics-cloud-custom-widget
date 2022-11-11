@@ -1,0 +1,66 @@
+{
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.schwarz.leaflet_map",
+  "version": "1.0.0",
+  "name": "Schwarz Leaflet Map",
+  "newInstancePrefix": "SchwarzLeafletMap",
+  "icon": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/LeafletMap/LeafletMap.png",
+  "description": "Schwarz-style Leaflet Map",
+  "supportsMobile": true,
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-schwarz-leaflet_map",
+      "url": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/LeafletMap/LeafletMap_main.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 420
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		},
+		"caption": {
+			"type": "string",
+			"description": "The caption of the pie chart",
+			"default": ""
+		}
+  },
+  "methods": {
+    "getCaption": {
+      "returnType": "string",
+      "description": "Get the caption of the pie chart",
+      "parameters": [],
+      "body": "return this.caption;"
+    },
+    "setCaption": {
+      "description": "Set the caption of the pie chart",
+      "parameters": [
+        {
+          "name": "caption",
+          "type": "string",
+          "description": "The new caption"
+        }
+      ],
+      "body": "this.caption = caption;"
+    }
+  },
+  "events": {
+    "onResultChanged": {
+      "description": "called when the result set of the widget changes"
+    },
+    "onClick": {
+      "description": "called when the widget is clicked"
+    },
+    "onPOIClick": {
+      "description": "called when a POI is clicked"
+    }
+
+}}
