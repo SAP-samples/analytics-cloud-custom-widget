@@ -112,7 +112,7 @@ var getScriptPromisify = (src) => {
 				label: {
 					show: true,
 					position: 'outside',
-					color: 'rgb(88,89,91)',
+					color: '#354a5f',
 					fontSize: 10,
 					formatter: function(params) {return params.value.toLocaleString('en-US')}
 				},
