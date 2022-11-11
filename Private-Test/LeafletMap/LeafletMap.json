@@ -6,14 +6,14 @@
   "version": "1.0.0",
   "name": "Schwarz Leaflet Map",
   "newInstancePrefix": "SchwarzLeafletMap",
-  "icon": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/LeafletMap/LeafletMap.png",
+  "icon": "https://sap-samples.github.io/analytics-cloud-custom-widget/Private-Test/LeafletMap/LeafletMap.png",
   "description": "Schwarz-style Leaflet Map",
   "supportsMobile": true,
   "webcomponents": [
     {
       "kind": "main",
       "tag": "com-sap-sample-schwarz-leaflet_map",
-      "url": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/LeafletMap/LeafletMap_main.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Private-Test/LeafletMap/LeafletMap_main.js",
       "integrity": "",
       "ignoreIntegrity": true
     }

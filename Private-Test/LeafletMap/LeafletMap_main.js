@@ -178,7 +178,7 @@ map.on('popupopen', function(){
       await getScriptPromisify('https://unpkg.com/leaflet@1.9.1/dist/leaflet.js')
 
 		lidlIcon = L.icon({
-		iconUrl: 'https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/LeafletMap/Lidl.png',
+		iconUrl: 'https://sap-samples.github.io/analytics-cloud-custom-widget/Private-Test/LeafletMap/Lidl.png',
 		//shadowUrl: 'leaf-shadow.png',
 
 		iconSize:     [36, 36], // size of the icon
