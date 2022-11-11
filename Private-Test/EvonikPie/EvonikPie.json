@@ -6,14 +6,14 @@
   "version": "1.0.0",
   "name": "Evonik PieChart",
   "newInstancePrefix": "EvonikPieChart",
-  "icon": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/EvonikPie/EvonikPie.png",
+  "icon": "https://sap-samples.github.io/analytics-cloud-custom-widget/Private-Test/EvonikPie/EvonikPie.png",
   "description": "Evonik-style Pie Chart",
   "supportsMobile": true,
   "webcomponents": [
     {
       "kind": "main",
       "tag": "com-sap-sample-evonik-pie_chart",
-      "url": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/EvonikPie/EvonikPie_main.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Private-Test/EvonikPie/EvonikPie_main.js",
       "integrity": "",
       "ignoreIntegrity": true
     }

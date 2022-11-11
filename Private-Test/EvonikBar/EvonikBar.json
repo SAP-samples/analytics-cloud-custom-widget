@@ -6,13 +6,13 @@
   "version": "1.0.0",
   "name": "Evonik BarChart",
   "newInstancePrefix": "EvonikBarChart",
-  "icon": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/EvonikBar/EvonikBar.png",
+  "icon": "https://sap-samples.github.io/analytics-cloud-custom-widget/Private-Test/EvonikBar/EvonikBar.png",
   "description": "Evonik-style Bar Chart",
   "webcomponents": [
     {
       "kind": "main",
       "tag": "com-sap-sample-evonik-bar_chart",
-      "url": "https://obey.wdf.sap.corp/temp/AppDesignCustomWidgets/custom-widget-samples/CWDBDemo/Harald/EvonikBar/EvonikBar_main.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Private-Test/EvonikBar/EvonikBar_main.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
