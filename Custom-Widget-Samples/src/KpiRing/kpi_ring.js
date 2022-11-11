@@ -76,7 +76,7 @@ import { parseMetadata } from '../utils/data-binding/parse'
             },
             axisLine: {
               lineStyle: {
-                width: 40
+                width: 25
               }
             },
             splitLine: {
@@ -95,11 +95,11 @@ import { parseMetadata } from '../utils/data-binding/parse'
               fontSize: 14
             },
             detail: {
-              width: 50,
+              width: 40,
               height: 14,
               fontSize: 14,
-              color: 'auto',
-              borderColor: 'auto',
+              color: '#354a5f',
+              borderColor: '#354a5f',
               borderRadius: 20,
               borderWidth: 0,
               formatter: '{value}%'
