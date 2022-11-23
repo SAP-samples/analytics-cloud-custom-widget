@@ -10,6 +10,7 @@
 ## Description
 This repository is created to host Custom Widget Samples, ready to use within your Analytical Application or also with the new Optimized and Unified Story Experience.
 We offer this GitHub repository to Customers and Partners to share their content by uploading and downloading Custom widget samples.
+This repository is mainly for testing purpose and NOT for PRODUCTIVE usage.
 
 ## Requirements
 All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimized view mode (OVM) is enabled within Analytics Designer or with the Optimized and Unified Story Experience.
