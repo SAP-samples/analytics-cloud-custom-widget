@@ -16,7 +16,7 @@ This repository is mainly for testing purpose and NOT for PRODUCTIVE usage.
 All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimized view mode (OVM) is enabled within Analytics Designer or with the Optimized and Unified Story Experience.
 
 ## Download and Installation
-Developers/Users can download the Custom Widgets files (JSON/JavaScript) and hosted into their favorite cloud hosting service. They can use as well this repository as a web server by just downloading the JSON file and upload it into their SAP Analytics Cloud tenant. 
+Developers/Users can download the Custom Widgets files (JSON/JavaScript) and host them into their favorite cloud hosting service. They can use as well this repository as a web server by just downloading the JSON file and upload them into their SAP Analytics Cloud tenant. 
 
 ## Known Issues
 If you are planning to host the custom widget within different GitHub repository or different web server, don't forget to change the path to the web componenet files in the JSON file. 
