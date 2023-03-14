@@ -90,7 +90,7 @@ class Renderer {
             {
               depth: 0,
               itemStyle: {
-                color: '#354a5f'
+                color: '#2395ff'
               },
               lineStyle: {
                 color: 'source',
@@ -100,7 +100,7 @@ class Renderer {
             {
               depth: 1,
               itemStyle: {
-                color: '#354a5f'
+                color: '#2395ff'
               },
               lineStyle: {
                 color: 'source',
@@ -110,7 +110,7 @@ class Renderer {
             {
               depth: 2,
               itemStyle: {
-                color: '#354a5f'
+                color: '#2395ff'
               },
               lineStyle: {
                 color: 'source',
@@ -120,16 +120,16 @@ class Renderer {
             {
               depth: 3,
               itemStyle: {
-                color: '#354a5f'
+                color: '#2395ff'
               },
               lineStyle: {
                 color: 'source',
-                opacity: 0.2
+                opacity: 0.1
               }
             }
           ],
           lineStyle: {
-            curveness: 0.5
+            curveness: 0.6
           }
         }
       ]
