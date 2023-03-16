@@ -104,7 +104,7 @@ class Renderer {
               },
               lineStyle: {
                 color: 'source',
-                opacity: 0.4
+                opacity: 0.6
               }
             },
             {
@@ -114,7 +114,7 @@ class Renderer {
               },
               lineStyle: {
                 color: 'source',
-                opacity: 0.2
+                opacity: 0.6
               }
             },
             {
@@ -124,12 +124,12 @@ class Renderer {
               },
               lineStyle: {
                 color: 'source',
-                opacity: 0.1
+                opacity: 0.6
               }
             }
           ],
           lineStyle: {
-            curveness: 0.6
+            curveness: 0.5
           }
         }
       ]

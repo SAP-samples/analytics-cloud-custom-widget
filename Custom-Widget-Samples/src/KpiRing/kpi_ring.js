@@ -70,14 +70,13 @@ import { parseMetadata } from '../utils/data-binding/parse'
               roundCap: true,
               clip: false,
               itemStyle: {
-                borderWidth: 2,
-                borderColor: '#f5f5f5',
-                color: '#354a5f'
+                borderWidth: 1,
+                borderColor: '#464646'
               }
             },
             axisLine: {
               lineStyle: {
-                width: 25
+                width: 40
               }
             },
             splitLine: {
@@ -96,11 +95,11 @@ import { parseMetadata } from '../utils/data-binding/parse'
               fontSize: 14
             },
             detail: {
-              width: 40,
+              width: 50,
               height: 14,
               fontSize: 14,
-              color: '#354a5f',
-              borderColor: '#354a5f',
+              color: 'auto',
+              borderColor: 'auto',
               borderRadius: 20,
               borderWidth: 0,
               formatter: '{value}%'
