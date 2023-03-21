@@ -90,7 +90,7 @@ class Renderer {
             {
               depth: 0,
               itemStyle: {
-                color: '#488ccc'
+                color: '#f24269'
               },
               lineStyle: {
                 color: 'source',
@@ -100,7 +100,7 @@ class Renderer {
             {
               depth: 1,
               itemStyle: {
-                color: '#488ccc'
+                color: '#f24269'
               },
               lineStyle: {
                 color: 'source',
@@ -110,7 +110,7 @@ class Renderer {
             {
               depth: 2,
               itemStyle: {
-                color: '#488ccc'
+                color: '#f24269'
               },
               lineStyle: {
                 color: 'source',
@@ -120,7 +120,7 @@ class Renderer {
             {
               depth: 3,
               itemStyle: {
-                color: '#488ccc'
+                color: '#f24269'
               },
               lineStyle: {
                 color: 'source',
