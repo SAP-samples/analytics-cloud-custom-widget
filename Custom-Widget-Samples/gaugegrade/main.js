@@ -30,7 +30,7 @@
     }
 
     async render (dataBinding, stops, reverse) {
-      await getScriptPromisify("https://cdn.staticfile.org/echarts/5.0.0/echarts.min.js");
+      await getScriptPromisify("https://cdn.staticfile.org/echarts/5.3.0/echarts.min.js");
       this.dispose()
 
       if (dataBinding.state !== 'success') { return }

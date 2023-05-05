@@ -8,8 +8,8 @@
     }
   
     async render (phrase) {
-      await getScriptPromisify("https://cdn.staticfile.org/echarts/5.0.0/echarts.min.js");
-      await getScriptPromisify("https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/wordcloudbyinput/echarts-wordcloud.min.js");
+      await getScriptPromisify("https://cdn.staticfile.org/echarts/5.3.0/echarts.min.js");
+      await getScriptPromisify("http://localhost:3000/Custom-Widget-Samples/wordcloudbyinput/echarts-wordcloud.min.js");
       this.dispose()
   
       // https://www.npmjs.com/package/echarts-wordcloudbyinput

@@ -37,7 +37,7 @@ var getScriptPromisify = (src) => {
 
     async render() {
       await getScriptPromisify(
-        "https://cdn.staticfile.org/echarts/5.0.0/echarts.min.js"
+        "https://cdn.staticfile.org/echarts/5.3.0/echarts.min.js"
         
       );
 
