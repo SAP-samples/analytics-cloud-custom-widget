@@ -2,16 +2,17 @@
   "eula": "",
   "vendor": "SAP",
   "license": "",
-  "id": "com.sap.sac.sample.echarts.ring_kpi",
+  "id": "com.sap.sac.sample.echarts.sankey",
   "version": "1.0.0",
-  "name": "ECharts Kpi Ring Prepared",
-  "newInstancePrefix": "EChartPrepared",
-  "description": "A sample custom widget wrapped EChart gauge ring Prepared",
+  "supportsMobile": true,
+  "name": "EChartsSankey",
+  "newInstancePrefix": "EChartsSankey",
+  "description": "A sample custom widget project",
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "com-sap-sample-echarts-ring_kpi",
-      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/dist/main.bundle.js",
+      "tag": "com-sap-sac-sample-echarts-sankey",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/sankey/main.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
@@ -23,11 +24,14 @@
     },
     "height": {
       "type": "integer",
-      "default": 420
+      "default": 320
     }
   },
+  "events": {},
+  "methods": {},
+  "types": {},
   "dataBindings": {
-    "myDataSource": {
+    "dataBinding": {
       "feeds": [
         {
           "id": "dimensions",
@@ -41,7 +45,5 @@
         }
       ]
     }
-  },
-  "methods": {},
-  "events": {}
+  }
 }

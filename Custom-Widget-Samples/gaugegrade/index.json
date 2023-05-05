@@ -12,14 +12,14 @@
     {
       "kind": "main",
       "tag": "com-sap-sac-sample-echarts-gaugegrade",
-      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/dist/main.bundle.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/gaugegrade/main.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-sap-sac-sample-echarts-gaugegrade-styling",
-      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/dist/main.bundle.js",
+      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/gaugegrade/styling.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
