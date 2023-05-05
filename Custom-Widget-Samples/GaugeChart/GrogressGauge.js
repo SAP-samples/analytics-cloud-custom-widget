@@ -1,11 +1,32 @@
-import * as echarts from 'echarts'
-import html from './GrogressGauge.html'
+var getScriptPromisify = (src) => {
+  return new Promise((resolve) => {
+    $.getScript(src, resolve);
+  });
+};
 
-import { parseMetadata } from '../utils/data-binding/parse'
+const parseMetadata = metadata => {
+  const { dimensions: dimensionsMap, mainStructureMembers: measuresMap } = metadata
+  const dimensions = []
+  for (const key in dimensionsMap) {
+    const dimension = dimensionsMap[key]
+    dimensions.push({ key, ...dimension })
+  }
+  const measures = []
+  for (const key in measuresMap) {
+    const measure = measuresMap[key]
+    measures.push({ key, ...measure })
+  }
+  return { dimensions, measures, dimensionsMap, measuresMap }
+}
 
 (function () {
   const template = document.createElement('template')
-  template.innerHTML = html
+  template.innerHTML = `
+  <style>
+  </style>
+  <div id="root" style="width: 100%; height: 100%;">
+  </div>
+  `
   class GrogressGauge extends HTMLElement {
     constructor () {
       super()
@@ -31,6 +52,8 @@ import { parseMetadata } from '../utils/data-binding/parse'
     }
 
     async render () {
+      await getScriptPromisify("https://cdn.staticfile.org/echarts/5.0.0/echarts.min.js");
+
       this.dispose()
 
       if (!this._myDataSource || this._myDataSource.state !== 'success') {

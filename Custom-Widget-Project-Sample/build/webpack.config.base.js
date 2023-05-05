@@ -2,7 +2,6 @@ const path = require('path')
 
 module.exports = {
   entry: [
-    './src/GaugeChart/GrogressGauge.js',
     './src/gaugegrade/main/index.js',
     './src/gaugegrade/styling/index.js',
     './src/KpiRing/kpi_ring.js',
