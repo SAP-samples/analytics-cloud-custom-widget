@@ -6,7 +6,7 @@
     "version": "1.0.1",
     "name": "ECharts Line Chart Hosted In SAP",
     "newInstancePrefix": "EChartLineChart",
-    "description": "A sample custom widget Line Chart Hosted in SAP",
+    "description": "A sample custom widget Line Chart",
     "webcomponents": [
       {
         "kind": "main",

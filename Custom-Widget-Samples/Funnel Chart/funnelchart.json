@@ -1,12 +1,12 @@
 {
     "eula": "",
     "vendor": "SAP",
-    "license": "",
+    "license": "Apache Echart",
     "id": "com.sap.sac.sample.echarts.funnel",
-    "version": "8.0.0",
+    "version": "1.0.0",
     "name": "Funnel Charrt",
     "newInstancePrefix": "funnelChart",
-    "description": "Test on Funnel Chart",
+    "description": "A Sample Custom Widget EChart Funnel Chart",
     "webcomponents": [
         {
             "kind": "main",
