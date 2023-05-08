@@ -11,7 +11,7 @@
     {
       "kind": "main",
       "tag": "com-sap-sample-echarts-grogress_gauge",
-      "url": "https://sap-samples.github.io/analytics-cloud-custom-widget/Custom-Widget-Samples/GaugeChart/GrogressGauge.js",
+      "url": "/GrogressGauge.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
