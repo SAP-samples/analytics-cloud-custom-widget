@@ -1,0 +1,47 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sac.sample.echarts.line_chart",
+    "version": "1.0.1",
+    "name": "ECharts Line Chart Hosted In SAP",
+    "newInstancePrefix": "EChartLineChart",
+    "description": "A sample custom widget Line Chart Hosted in SAP",
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sample-echarts-line_chart",
+        "url": "/Linechart.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {
+      "width": {
+        "type": "integer",
+        "default": 600
+      },
+      "height": {
+        "type": "integer",
+        "default": 420
+      }
+    },
+    "methods": {},
+    "events": {},
+    "dataBindings": {
+      "dataBinding": {
+        "feeds": [
+          {
+            "id": "dimensions",
+            "description": "Dimensions",
+            "type": "dimension"
+          },
+          {
+            "id": "measures",
+            "description": "Measures",
+            "type": "mainStructureMember"
+          }
+        ]
+      }
+    }
+  }
