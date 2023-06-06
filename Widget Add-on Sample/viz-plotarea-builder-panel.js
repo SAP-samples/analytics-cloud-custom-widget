@@ -9,7 +9,7 @@ plotareaFormTemplate.innerHTML = `
                     <td><input id="bps_rounded" type="checkbox" checked></td>
                 </tr>
                 <tr>
-                    <td>Increate Size</td>
+                    <td>Increase Size</td>
                     <td><input id="bps_size_increment" type="number" value="0">%</td>
                 </tr>
                 <tr>
