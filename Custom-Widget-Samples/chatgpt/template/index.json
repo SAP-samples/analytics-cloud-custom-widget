@@ -1,0 +1,48 @@
+{
+    "eula": "",
+    "vendor": "Company",
+    "license": "",
+    "id": "com.company.sac.sample.gpt.newsticker",
+    "version": "1.0.0",
+    "supportsMobile": true,
+    "name": "GPT NewsTicker",
+    "newInstancePrefix": "NewsTicker",
+    "description": "A sample custom widget NewsTicker",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "news-ticker",
+            "url": "http://localhost:3000/gpt/news-ticker/main.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 600
+        },
+        "height": {
+            "type": "integer",
+            "default": 600
+        }
+    },
+    "methods": {},
+    "events": {},
+    "dataBindings": {
+        "dataBinding": {
+            "feeds": [
+                {
+                    "id": "dimensions",
+                    "description": "Dimensions",
+                    "type": "dimension"
+                },
+                {
+                    "id": "measures",
+                    "description": "Measures",
+                    "type": "mainStructureMember"
+                }
+            ]
+        }
+    }
+}
