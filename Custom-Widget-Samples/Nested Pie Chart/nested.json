@@ -1,60 +1,60 @@
 {
-    "eula": "",
-    "vendor": "SAP",
-    "license": "Apache Echart",
-    "id": "com.sap.sac.sample.echarts.funnel",
-    "version": "1.0.0",
-    "name": "Funnel Charrt",
-    "newInstancePrefix": "funnelChart",
-    "description": "A Sample Custom Widget EChart Funnel Chart",
-    "webcomponents": [
-        {
-            "kind": "main",
-            "tag": "github-sap-funnel-chart",
-            "url": "/funnelchart.js",
-            "integrity": "",
-            "ignoreIntegrity": true
-        }
-    ],
-    "properties": {
-        "width": {
-            "type": "integer",
-            "default": 600
-        },
-        "height": {
-            "type": "integer",
-            "default": 420
-        },
-    "dimensionFeed": {
-            "type": "string[]",
-            "default": []
-        },
-        "measureFeed": {
-            "type": "string[]",
-            "default": []
-        },
-    "caption": {
-        "type": "string",
-        "description": "The caption of the gauge chart",
-        "default": ""
+  "eula": "",
+  "vendor": "SAP",
+  "license": "",
+  "id": "com.sap.sac.sample.echarts.nested_chart",
+  "version": "2.0.0",
+  "name": "ECharts Nested Pie Chart Hosted SAP Github",
+  "newInstancePrefix": "EChartNestedPieChart",
+  "description": "A sample custom widget wrapped EChart Nested Pie Chart",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sample-echarts-nested_chart",
+      "url": "/main_nested.js",
+      "integrity": "",
+      "ignoreIntegrity": true
     }
+  ],
+  "properties": {
+		"width": {
+			"type": "integer",
+			"default": 600
+		},
+		"height": {
+			"type": "integer",
+			"default": 420
+		},
+    "dimensionFeed": {
+			"type": "string[]",
+			"default": []
+		},
+		"measureFeed": {
+			"type": "string[]",
+			"default": []
+		},
+    "caption": {
+  		"type": "string",
+  		"description": "",
+  		"default": ""
+  	}
   },
   "dataBindings": {
-        "myDataSource": {
-            "feeds": [
-                {
-                    "id": "dimensions",
-                    "description": "Dimensions",
-                    "type": "dimension"
-                },
-                {
-                    "id": "measures",
-                    "description": "Measures",
-                    "type": "mainStructureMember"
-                }
-            ]
+		"myDataSource": {
+			"feeds": [
+				{
+          "id": "dimensions",
+          "description": "Dimensions",
+          "type": "dimension"
+        },
+        {
+          "id": "measures",
+          "description": "Measures",
+          "type": "mainStructureMember"
         }
-    },
+			]
+		}
+	},
   "methods": {
     "getCaption": {
       "returnType": "string",
@@ -141,7 +141,7 @@
       ],
       "body": "this.dataBindings.getDataBinding('myDataSource').setModel(modelId);"
     }
-  
+
   },
   "events": {
     "onResultChanged": {
@@ -150,4 +150,4 @@
     "onClick": {
       "description": "called when the result set of the widget changes"
     }
-  }}
+}}

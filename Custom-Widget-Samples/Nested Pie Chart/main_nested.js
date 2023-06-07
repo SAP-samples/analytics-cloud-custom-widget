@@ -7,12 +7,12 @@ var getScriptPromisify = (src) => {
 (function () {
   const prepared = document.createElement("template");
   prepared.innerHTML = `
-          <style>
-          </style>
-          <div id="root" style="width: 100%; height: 100%;">
-          </div>
-        `;
-  class FunnelChartPrepped extends HTMLElement {
+        <style>
+        </style>
+        <div id="root" style="width: 100%; height: 100%;">
+        </div>
+      `;
+  class NestedPieSamplePrepped extends HTMLElement {
     constructor() {
       super();
 
@@ -38,6 +38,7 @@ var getScriptPromisify = (src) => {
     async render() {
       await getScriptPromisify(
         "https://cdn.staticfile.org/echarts/5.3.0/echarts.min.js"
+        
       );
 
       if (!this._myDataSource || this._myDataSource.state !== "success") {
@@ -55,55 +56,64 @@ var getScriptPromisify = (src) => {
 
       const myChart = echarts.init(this._root, "wight");
       const option = {
-        title: {
-          text: "Funnel",
-        },
         tooltip: {
           trigger: "item",
-          formatter: "{a} <br/>{b} : {c}%",
-        },
-        toolbox: {
-          feature: {
-            dataView: { readOnly: false },
-            restore: {},
-            saveAsImage: {},
-          },
+          formatter: "{a} <br/>{b}: {c} ({d}%)",
         },
         legend: {
-          data: ["Show", "Click", "Visit", "Inquiry", "Order"],
+          data,
         },
         series: [
           {
-            name: "Funnel",
-            type: "funnel",
-            left: "10%",
-            top: 60,
-            bottom: 60,
-            width: "80%",
-            min: 0,
-            max: 100,
-            minSize: "0%",
-            maxSize: "100%",
-            sort: "descending",
-            gap: 2,
+            name: "",
+            type: "pie",
+            selectedMode: "single",
+            radius: [0, "30%"],
             label: {
-              show: true,
-              position: "inside",
+              position: "inner",
+              fontSize: 14,
             },
             labelLine: {
-              length: 10,
-              lineStyle: {
-                width: 1,
-                type: "solid",
-              },
+              show: false,
             },
-            itemStyle: {
-              borderColor: "#fff",
+          },
+          {
+            name: "",
+            type: "pie",
+            radius: ["45%", "60%"],
+            labelLine: {
+              length: 50,
+            },
+            label: {
+              formatter: "{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ",
+              backgroundColor: "#F6F8FC",
+              borderColor: "#8C8D8E",
               borderWidth: 1,
-            },
-            emphasis: {
-              label: {
-                fontSize: 20,
+              borderRadius: 6,
+              rich: {
+                a: {
+                  color: "#6E7079",
+                  lineHeight: 22,
+                  align: "center",
+                },
+                hr: {
+                  borderColor: "#8C8D8E",
+                  width: "100%",
+                  borderWidth: 1,
+                  height: 0,
+                },
+                b: {
+                  color: "#4C5058",
+                  fontSize: 14,
+                  fontWeight: "bold",
+                  lineHeight: 33,
+                },
+                per: {
+                  color: "#fff",
+                  backgroundColor: "#4C5058",
+                  padding: [3, 4],
+                  borderRadius: 4,
+                },
               },
             },
             data,
@@ -114,5 +124,5 @@ var getScriptPromisify = (src) => {
     }
   }
 
-  customElements.define("github-sap-funnel-chart", FunnelChartPrepped);
+  customElements.define("com-sap-sample-echarts-nested_chart", NestedPieSamplePrepped);
 })();
