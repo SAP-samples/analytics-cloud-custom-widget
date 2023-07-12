@@ -72,13 +72,13 @@ var getScriptPromisify = (src) => {
             data: measures.map((measure, i) => {
               return {
                 value: data[0][measure.key].raw,
-                name: measure.label,
-                title: {
-                  offsetCenter: ['-0%', `${-35 + i * 30}%`]
-                },
+                //name: measure.label,
+                // title: {
+                //   offsetCenter: ['-0%', `${-35 + i * 30}%`]
+                // },
                 detail: {
                   valueAnimation: true,
-                  offsetCenter: ['0%', `${-20 + i * 30}%`]
+                  offsetCenter: ['0%', `0%`]
                 }
               }
             }),
@@ -90,16 +90,17 @@ var getScriptPromisify = (src) => {
             progress: {
               show: true,
               overlap: false,
-              roundCap: true,
+              roundCap: false,
               clip: false,
               itemStyle: {
                 borderWidth: 1,
-                borderColor: '#464646'
+                color:'#348B26',
+                borderColor: '#348B26'
               }
             },
             axisLine: {
               lineStyle: {
-                width: 40
+                width:25
               }
             },
             splitLine: {
@@ -120,11 +121,8 @@ var getScriptPromisify = (src) => {
             detail: {
               width: 50,
               height: 14,
-              fontSize: 14,
-              color: 'auto',
-              borderColor: 'auto',
-              borderRadius: 20,
-              borderWidth: 0,
+              fontSize: 36,
+              color:'#999999',
               formatter: '{value}%'
             }
           }
