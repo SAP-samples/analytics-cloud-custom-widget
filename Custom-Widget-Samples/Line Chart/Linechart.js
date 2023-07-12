@@ -95,7 +95,17 @@ const parseMetadata = metadata => {
         tooltip: {
           trigger: 'axis'
         },
-        series
+        series: [
+          {
+            lineStyle: {
+            width: 7
+            },
+            type: 'line',
+            color: '#0FAAFF',
+            symbolSize:10,
+            smooth: true
+          }
+        ]
       }
       myChart.setOption(option)
     }
