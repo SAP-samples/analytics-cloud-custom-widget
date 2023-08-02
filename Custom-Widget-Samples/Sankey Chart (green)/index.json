@@ -5,6 +5,7 @@
   "id": "com.sap.sac.sample.echarts.sankeyyg",
   "version": "1.0.0",
   "supportsMobile": true,
+  "supportsLinkedAnalysisFilterOnSelection": true,
   "name": "EChartsSankeyyg",
   "newInstancePrefix": "EChartsSankeyyg",
   "description": "A sample custom widget project",

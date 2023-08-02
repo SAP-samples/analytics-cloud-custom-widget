@@ -40,7 +40,7 @@ var getScriptPromisify = (src) => {
       this._echart = null
     }
 
-    async render (dataBinding) {
+    async render (dataBinding, props) {
       await getScriptPromisify("https://cdn.staticfile.org/echarts/5.3.0/echarts.min.js");
       this.dispose()
 
@@ -58,7 +58,7 @@ var getScriptPromisify = (src) => {
       data.forEach(d => {
         const { label, id, parentId } = d[dimension.key]
         const { raw } = d[measure.key]
-        nodes.push({ name: label })
+        nodes.push({ name: label})
 
         const dParent = data.find(d => {
           const { id } = d[dimension.key]
@@ -140,6 +140,25 @@ var getScriptPromisify = (src) => {
           }
         ]
       })
+
+      const that = this;
+      this._echart.on('click', (params) => {
+        const dataType = params.dataType;
+        const label = dataType === 'node' ? params.data.name : dataType === 'edge' ? params.data.target : '';
+
+        const key = dimension.key;
+        const dimensionId = dimension.id;
+        const selectedItem = dataBinding.data.find(item => item[key].label === label);
+
+        const linkedAnalysis = props['dataBindings'].getDataBinding('dataBinding').getLinkedAnalysis();
+        if (selectedItem) {
+          const selection = {};
+          selection[dimensionId] = selectedItem[key].id;
+          linkedAnalysis.setFilters(selection)
+        } else {
+          linkedAnalysis.removeFilters();
+        }
+      })
     }
 
     dispose () {
@@ -169,6 +188,7 @@ var getScriptPromisify = (src) => {
       this._shadowRoot = this.attachShadow({ mode: 'open' })
       this._shadowRoot.appendChild(template.content.cloneNode(true))
       this._root = this._shadowRoot.getElementById('root')
+      this._props = {}
       this._renderer = new Renderer(this._root)
     }
 
@@ -176,6 +196,7 @@ var getScriptPromisify = (src) => {
     // LifecycleCallbacks
     // ------------------
     async onCustomWidgetBeforeUpdate (changedProps) {
+      this._props = { ...this._props, ...changedProps };
     }
 
     async onCustomWidgetAfterUpdate (changedProps) {
@@ -200,7 +221,7 @@ var getScriptPromisify = (src) => {
         return
       }
 
-      this._renderer.render(this.dataBinding)
+      this._renderer.render(this.dataBinding, this._props)
     }
 
     dispose () {
