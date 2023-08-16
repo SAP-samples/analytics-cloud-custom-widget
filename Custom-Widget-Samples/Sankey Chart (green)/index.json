@@ -29,7 +29,13 @@
     }
   },
   "events": {},
-  "methods": {},
+  "methods": {
+		"getDataSource": {
+			"parameters": [],
+			"body": "return this.dataBindings.getDataBinding('dataBinding').getDataSource();",
+			"returnType": "DataSource"
+		}
+  },
   "types": {},
   "dataBindings": {
     "dataBinding": {
