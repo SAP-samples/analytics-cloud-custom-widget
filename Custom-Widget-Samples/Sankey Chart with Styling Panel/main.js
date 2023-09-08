@@ -96,41 +96,41 @@ var getScriptPromisify = (src) => {
               {
                 depth: 0,
                 itemStyle: {
-                  color: '#348B26'
+                  color: props.depth0Settings.itemColor || '#348B26'
                 },
                 lineStyle: {
                   color: 'source',
-                  opacity: 0.6
+                  opacity: props.depth0Settings.lineOpacity//0.6
                 }
               },
               {
                 depth: 1,
                 itemStyle: {
-                  color: '#4FB81C'
+                  color: props.depth1Settings.itemColor || '#4FB81C'
                 },
                 lineStyle: {
                   color: 'source',
-                  opacity: 0.4
+                  opacity: props.depth1Settings.lineOpacity//0.4
                 }
               },
               {
                 depth: 2,
                 itemStyle: {
-                  color: '#93C939'
+                  color: props.depth2Settings.itemColor || '#93C939'
                 },
                 lineStyle: {
                   color: 'source',
-                  opacity: 0.2
+                  opacity: props.depth2Settings.lineOpacity//0.2
                 }
               },
               {
                 depth: 3,
                 itemStyle: {
-                  color: '#BCDC50'
+                  color: props.depth3Settings.itemColor || '#BCDC50'
                 },
                 lineStyle: {
                   color: 'source',
-                  opacity: 0.1
+                  opacity: props.depth3Settings.lineOpacity//0.1
                 }
               }
             ],
@@ -227,6 +227,7 @@ var getScriptPromisify = (src) => {
     dispose () {
       this._renderer.dispose()
     }
+
   }
 
   customElements.define('com-sap-sac-sample-echarts-sankeyyg', Main)
