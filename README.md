@@ -10,19 +10,20 @@
 ## Description
 This repository is created to host Custom Widget Samples, ready to use within your Analytical Application or also with the new Optimized and Unified Story Experience.
 We offer this GitHub repository to Customers and Partners to share their content by uploading and downloading Custom widget samples.
-This repository is mainly for testing purpose and NOT for PRODUCTIVE usage.
+This repository is mainly for testing purpose and NOT for PRODUCTIVE usage. 
+Please check and read well the Licenses of the third party libraries used within our Custom Widgets while usage.
 
 ## Requirements
 All the exisiting Custom Widget Samples are developed with the new property: Data Binding and works ONLY if your optimized view mode (OVM) is enabled within Analytics Designer or with the Optimized and Unified Story Experience.
 
 ## Download and Installation
-Developers/Users can download the Custom Widgets files (JSON/JavaScript) and host them into their favorite cloud hosting service. They can use as well this repository as a web server by just downloading the JSON file and upload them into their SAP Analytics Cloud tenant. 
+Developers/Users can download the Custom Widgets files (JSON/JavaScript) and host them into their favorite cloud hosting service.
 
 ## Known Issues
 If you are planning to host the custom widget within different GitHub repository or different web server, don't forget to change the path to the web componenet files in the JSON file. 
 
 ## How to obtain support
-You can contact the Admin team by writing an email to either: m.ferchichi@sap.com or jie.deng@sap.com
+You can contact the Admin team by writing an email to either: m.ferchichi@sap.com 
 
 ## Contributing
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
