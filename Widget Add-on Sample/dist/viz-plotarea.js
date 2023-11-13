@@ -54,18 +54,18 @@ AxisLabelTemplate.innerHTML = `
 `;
 
 const iconMap = {
-    'California': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Location.png',
-    'Nevada': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Location.png',
-    'Oregon': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Location.png',
-    'Carbonated Drinks': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/CarbonatedDrinks.png',
-    'Juices': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Juices.png',
-    'Alcohol': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Alcohol.png',
-    'Others': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Others.png',
-    'Gross Margin': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/GrossMargin.png',
-    'Discount': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Discount.png',
-    'Original Sales Price': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Price.png',
-    'City': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/City.png',
-    'Info': 'https://fp68static.cfapps.eu10-004.hana.ondemand.com/sap-icons/Info.png',
+    'California': 'https://www.iconpacks.net/icons/3/free-hotel-icon-9215.png',
+    'Nevada': 'https://www.iconpacks.net/icons/4/free-school-building-icon-12440.png',
+    'Oregon': 'https://www.iconpacks.net/icons/2/free-hotel-icon-3453.png',
+    'Carbonated Drinks': 'https://www.iconpacks.net/icons/2/free-martini-icon-1859.png',
+    'Juices': 'https://www.iconpacks.net/icons/2/free-lemonade-icon-1853.png',
+    'Alcohol': 'https://www.iconpacks.net/icons/2/free-wine-icon-2344.png',
+    'Others': 'https://www.iconpacks.net/icons/2/free-icon-wine-toast-2345.png',
+    'Gross Margin': 'https://www.iconpacks.net/icons/3/free-icon-gold-coins-6373.png',
+    'Discount': 'https://www.iconpacks.net/icons/free-icons-6/free-red-sales-price-tag-or-discount-sticker-icon-18979.png',
+    'Original Sales Price': 'https://www.iconpacks.net/icons/2/free-icon-euro-coin-2151.png',
+    'City': 'https://www.iconpacks.net/icons/2/free-icon-hotel-3447.png',
+    'Info': 'https://www.iconpacks.net/icons/free-icons-6/free-blue-information-button-icon-18667.png',
 };
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
