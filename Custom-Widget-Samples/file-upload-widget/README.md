@@ -6,7 +6,15 @@ The purpose of the File upload widget is to make it easier to upload CSV and Exc
 
 It converts data from a file, starts the process of creating an import job step-by-step, validates the data, and finally uses the [Data Import Service (DIS)](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/fe6efb8aba9444c6a3ce21eef02bba62.html) to persist fact data to the SAC model. It was created using UI5 React Web components that blends UI5 library theming with React's state-driven responsiveness.
 
+## Disclaimer
 
+This repository, which hosts Custom Widget Samples intended for use within your Analytical Application or the new Optimized Story Experience, is provided by SAP for testing purposes only and is NOT intended for productive usage.
+
+While we are pleased to share this content with our customers and partners, please note that SAP has no obligation to provide support or maintenance for the samples contained in this repository. Users are solely responsible for their use of these samples.
+
+Furthermore, it is crucial to check and thoroughly read the licenses of the third-party libraries used within our Custom Widgets before usage. By using the samples in this repository, you acknowledge that you understand and agree to abide by all terms and conditions set forth in these licenses.
+
+Please use this repository responsibly and at your own risk.
 
 ## Dev Setup
 
