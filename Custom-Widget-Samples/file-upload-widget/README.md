@@ -34,3 +34,9 @@ Please use this repository responsibly and at your own risk.
 - The script uses the **fileuploadWidgetTemplate.json** file to construct a new widget configuration based on the latest version
 - in the `/versions` directory a new zip file and json file will be created with the associated version name
 - to use the build Upload the json file in the widgets section of SAC and then upload the zip file when prompted.
+
+## Uselful Blogs
+- https://blogs.sap.com/2023/11/03/how-to-upload-data-to-a-public-or-private-planning-version-using-a-file-upload-custom-widget-within-sap-analytics-cloud./
+- https://blogs.sap.com/2023/11/29/file-upload-widget-how-to-develop-custom-widgets-with-the-react-framework/
+  
+
