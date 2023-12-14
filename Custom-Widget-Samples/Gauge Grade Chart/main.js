@@ -78,24 +78,24 @@ var getScriptPromisify = (src) => {
           pointer: {
             icon: 'path://M12.8,0.7l12,40.1H0.7L12.8,0.7z',
             length: '12%',
-            width: 10,
+            width: 8,
             offsetCenter: [0, '-25%'],
             itemStyle: {
               color: 'auto'
             }
           },
           axisTick: {
-            length: 12,
-            lineStyle: {
-              color: 'auto',
-              width: 0.5
-            }
-          },
-          splitLine: {
-            length: 18,
+            length: 4,
             lineStyle: {
               color: 'auto',
               width: 1
+            }
+          },
+          splitLine: {
+            length: 10,
+            lineStyle: {
+              color: 'auto',
+              width: 0.5
             }
           },
           axisLabel: {
