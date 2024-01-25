@@ -94,8 +94,8 @@ var getScriptPromisify = (src) => {
               clip: false,
               itemStyle: {
                 borderWidth: 1,
-                color:'#348B26',
-                borderColor: '#348B26'
+                color:'#0070F2',
+                borderColor: '#0070F2'
               }
             },
             axisLine: {
@@ -121,8 +121,8 @@ var getScriptPromisify = (src) => {
             detail: {
               width: 50,
               height: 14,
-              fontSize: 36,
-              color:'#999999',
+              fontSize: 30,
+              color:'#1D2D3E',
               formatter: '{value}%'
             }
           }
