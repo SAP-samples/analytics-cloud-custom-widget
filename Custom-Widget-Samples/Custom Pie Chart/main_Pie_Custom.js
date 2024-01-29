@@ -1,8 +1,20 @@
-var getScriptPromisify = (src) => {
+/*var getScriptPromisify = (src) => {
   return new Promise((resolve) => {
     $.getScript(src, resolve);
   });
-};
+};*/
+
+var getScriptPromisify = (src) => {
+  // Workaround with conflict between geo widget and echarts.
+  const __define = define
+  define = undefined
+  return new Promise(resolve => {
+    $.getScript(src, () => {
+      define = __define
+      resolve()
+    })
+  })
+}
 
 (function () {
   const prepared = document.createElement("template");
