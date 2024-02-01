@@ -55,8 +55,9 @@ var getScriptPromisify = (src) => {
 
       const myChart = echarts.init(this._root, "wight");
       const option = {
+        color: ['#D2EFFF', '#A6E0FF', '#89D1FF', '#1990FF', '#0057D2'],
         title: {
-          text: "Funnel",
+          text: "",
         },
         tooltip: {
           trigger: "item",
@@ -99,7 +100,7 @@ var getScriptPromisify = (src) => {
             },
             itemStyle: {
               borderColor: "#fff",
-              borderWidth: 1,
+              borderWidth: 4,
             },
             emphasis: {
               label: {

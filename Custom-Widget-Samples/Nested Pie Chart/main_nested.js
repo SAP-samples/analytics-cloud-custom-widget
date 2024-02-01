@@ -56,6 +56,7 @@ var getScriptPromisify = (src) => {
 
       const myChart = echarts.init(this._root, "wight");
       const option = {
+        color: ['#D2EFFF','#0057D2','#3C8CDD', '#4CB1FF', '#0070F2', '#A6E0FF', '#89D1FF', '#1990FF','#0040B0' ],
         tooltip: {
           trigger: "item",
           formatter: "{a} <br/>{b}: {c} ({d}%)",
