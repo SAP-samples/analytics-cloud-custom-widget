@@ -56,14 +56,27 @@ var getScriptPromisify = (src) => {
 
       const myChart = echarts.init(this._root, "wight");
       const option = {
-        color: ['#D2EFFF','#0057D2','#3C8CDD', '#4CB1FF', '#0070F2', '#A6E0FF', '#89D1FF', '#1990FF','#0040B0' ],
+        color: ['#0070F2','#D2EFFF','#4CB1FF', '#89D1FF'],
         tooltip: {
           trigger: "item",
           formatter: "{a} <br/>{b}: {c} ({d}%)",
         },
         
         series: [
-          
+          {
+            name: '',
+            type: 'pie',
+            selectedMode: 'single',
+            radius: [0, '30%'],
+            label: {
+              position: 'inner',
+              fontSize: 14
+            },
+            labelLine: {
+              show: false
+            },
+            data,
+          },
           {
             name: "",
             type: "pie",
@@ -105,6 +118,7 @@ var getScriptPromisify = (src) => {
             },
             data,
           },
+          
         ],
       };
       myChart.setOption(option);
