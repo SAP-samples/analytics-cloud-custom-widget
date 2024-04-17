@@ -24,8 +24,8 @@
 
 				var PageController = Controller.extend("PageController", {
 					onInit: function() {
-						this.getView().setModel(new JSONModel("https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/State.json"));
-						this.getView().setModel(new JSONModel("https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/types.json"), "A");
+						this.getView().setModel(new JSONModel("https://sap-samples.github.io/analytics-cloud-custom-widget/3D-Park/CarparkWidget/State.json"));
+						this.getView().setModel(new JSONModel("https://sap-samples.github.io/analytics-cloud-custom-widget/3D-Park/CarparkWidget/types.json"), "A");
 					},
 					// onPress: function (evt) {
 					// 	// MessageToast.show(evt.getSource().getBindingContext().getProperty("Name")

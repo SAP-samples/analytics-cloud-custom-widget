@@ -55927,8 +55927,8 @@
         console.error( "gltferror: " +  error );
       }
 
-      var scriptroot = 'https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/';
-      var modelroot = 'https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/'
+      var scriptroot = 'https://sap-samples.github.io/analytics-cloud-custom-widget/3D-Park/CarparkWidget/';
+      var modelroot = 'https://sap-samples.github.io/analytics-cloud-custom-widget/3D-Park/CarparkWidget/'
 
       Promise.all([
       loadAll(new THREE.GLTFLoader(), modelroot + 'Parkplatz.glb', modelroot + 'parkhauswand.glb', modelroot + 'parkhauswandseite.glb', modelroot + 'parkfahrbahn.glb', modelroot + 'bike.glb', modelroot + 'charchingstation.glb', modelroot + 'ebike.glb', modelroot + 'bikecs.glb', modelroot + 'ebikecs.glb', modelroot + 'holder.glb', modelroot + 'automat.glb', modelroot + 'doorwnd.glb').then(function(res) {
