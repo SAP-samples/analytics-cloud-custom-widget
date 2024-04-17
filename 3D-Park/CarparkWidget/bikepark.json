@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "com-sample-parkhaus",
-			"url": "https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/parkhaus.js",
+			"url": "https://sap-samples.github.io/analytics-cloud-custom-widget/3D-Park/CarparkWidget/parkhaus.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-sample-parkhaus-styling",
-			"url": "https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/parkhaus_styling.js",
+			"url": "https://sap-samples.github.io/analytics-cloud-custom-widget/3D-Park/CarparkWidget/parkhaus_styling.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-sample-parkhaus-builder",
-			"url": "https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/parkhaus_builder.js",
+			"url": "https://sap-samples.github.io/analytics-cloud-custom-widget/3D-Park/CarparkWidget/parkhaus_builder.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
