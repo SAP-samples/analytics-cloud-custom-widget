@@ -8,7 +8,7 @@
 -->
 
 ## Disclaimer
-This repository, which hosts Custom Widget Samples intended for use within your Analytical Application or the new Optimized Story Experience, is provided by SAP for testing purposes only and is NOT intended for productive usage.
+This repository, which hosts Custom Widget Samples intended for use within your Analytical Application or the new Optimized Story Experience, is provided by SAP for testing purposes.
  
 While we are pleased to share this content with our customers and partners, please note that SAP has no obligation to provide support or maintenance for the samples contained in this repository. Users are solely responsible for their use of these samples.
  
