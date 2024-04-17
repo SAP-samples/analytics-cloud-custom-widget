@@ -1,0 +1,15 @@
+{
+    "ProductCollection": [
+		{
+			"ProductId": "HT-1000",
+            "Name": "Place A",
+            "ProductCollection": [
+                {
+                    "ProductId": "HT-2343",
+                    "Name": "Place A1",
+                    "selectedkeys": [0, 1]
+                }
+            ]
+        }
+    ]
+}

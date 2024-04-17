@@ -1,0 +1,94 @@
+{
+	"id": "com.sample.bikepark",
+	"version": "1.0.5",
+	"name": "bike park",
+    "icon": "data:image/png;base64,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",
+	"description": "bike park",
+	"newInstancePrefix": "bikepark",
+	"vendor": "NONE",
+	"eula": "",
+	"license": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-sample-parkhaus",
+			"url": "https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/parkhaus.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-sample-parkhaus-styling",
+			"url": "https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/parkhaus_styling.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "com-sample-parkhaus-builder",
+			"url": "https://obey.pamod.c.eu-nl-1.cloud.sap/public/customWidgets/AppDesignCustomWidgets/custom-widget-samples/CarparkWidget/parkhaus_builder.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"parking": {
+			"type": "integer[][]",
+			"description": "array of integer 0 empty, 1 occupied",
+			"default": [[1,1,0,1,0,0,1], [1,1,0,1,0,0,1]]
+		},
+		"width": {
+			"type": "integer",
+			"default": 100
+		},
+		"height": {
+			"type": "integer",
+			"default": 100
+		}
+	},
+	"methods": {
+		"setParking": {
+			"description": "Sets the array of integer 0 empty, 1 occupied",
+			"parameters": [
+				{
+					"name": "parking_",
+					"type": "integer[][]",
+					"description": "array of integer 0 empty, 1 occupied"
+				}
+			]
+		},
+		"getParking": {
+			"description": "Gets the array of integer 0 empty, 1 occupied",
+			"returnType": "integer[][]"
+		},
+		"getHovered": {
+			"description": "Gets coordinates [x,y] of the currently hovered element, if nothing is hovered since start, it returns [-1,-1]",
+			"returnType": "integer[]"
+		},
+		"LookAt" : {
+			"description": "Change the camera postions to have the selected place in the middle of the focus",
+			"parameters": [
+				{
+					"name": "x",
+					"type": "integer",
+					"description": "The parking place number in floor y"
+				},
+				{
+					"name": "parking_",
+					"type": "integer",
+					"description": "the floor"
+				}
+			]
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the Test Widget"
+		},
+		"onHover": {
+			"description": "Called if the hovered parking place changed"
+		}
+	}
+}
+
+ 

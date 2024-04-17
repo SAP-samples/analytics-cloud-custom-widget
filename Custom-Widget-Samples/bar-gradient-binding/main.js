@@ -81,6 +81,7 @@ var getScriptPromisify = (src) => {
           show: false
         },
         axisLabel: {
+          formatter: '{value} Million',
           color: '#999'
         }
       },
